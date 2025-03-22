@@ -21,4 +21,4 @@ jobs:
       run: docker build . --file Dockerfile --tag bengieantony/secureauth:latest
 
     - name: Push to Dockerhub
-      run: docker push bengieantony/SecureAuth:latest
+      run: docker push bengieantony/secureauth:latest
