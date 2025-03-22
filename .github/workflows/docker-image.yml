@@ -18,7 +18,7 @@ jobs:
       run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag bengieantony/SecureAuth:latest
+      run: docker build . --file Dockerfile --tag bengieantony/secureauth:latest
 
     - name: Push to Dockerhub
       run: docker push bengieantony/SecureAuth:latest
